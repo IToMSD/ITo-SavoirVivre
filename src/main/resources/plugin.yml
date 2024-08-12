@@ -1,0 +1,8 @@
+name: ITo-SavoirVivre
+version: '1.0'
+main: pl.polsatgranie.itomsd.savoirVivre.SavoirVivre
+api-version: '1.13'
+load: STARTUP
+authors: [ PolsatGraniePL ]
+description: IToMSD plugin
+website: https://itomsd.com/

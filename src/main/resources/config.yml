@@ -1,0 +1,63 @@
+#------------------------------------------------------------
+#|                                                          |
+#|      _  _______        __     __    _____   ____         |
+#|     | ||___ ___|      |  \   /  |  / ____| |  _ \        |
+#|     | |   | |   ___   | |\\ //| | | (___   | | \ \       |
+#|     | |   | |  / _ \  | | \_/ | |  \___ \  | |  ) )      |
+#|     | |   | | | (_) | | |     | |  ____) | | |_/ /       |
+#|     |_|   |_|  \___/  |_|     |_| |_____/  |____/        |
+#|                                                          |
+#|                                                          |
+#------------------------------------------------------------
+#|                 +==================+                     |
+#|                 |    SavoirVivre   |                     |
+#|                 |------------------|                     |
+#|                 |        1.0       |                     |
+#|                 |------------------|                     |
+#|                 |  PolsatGraniePL  |                     |
+#|                 +==================+                     |
+#------------------------------------------------------------
+#
+# Hello, if you need help or have an idea that will improve our plugin,
+#                   then be sure to contact us:
+#
+#  IToMSD Website: https://itomsd.com/
+#  IToMSD Discord: https://dc.itomsd.com/
+#  IToMSD SpigotMC: https://www.spigotmc.org/resources/authors/itomsd.1983449/
+
+
+
+
+# joinplayer - Reward settings when players join the server
+# deathplayer - Reward settings when players die on the server
+# enabled - Whether this option should be enabled
+# must_first_join - Whether the plugin works only on players who entered the server for the first time
+# messages - What kind of messages will execute the command
+# command - What command should be executed
+# time - How much time a player has to write the corresponding message in seconds
+
+joinplayer:
+  enabled: true
+  must_first_join: false
+  messages:
+    - "hi"
+    - "hey"
+    - "hello"
+  command: "eco give %player% 1"
+  time: 10 # seconds
+
+deathplayer:
+  enabled: true
+  messages:
+    - "F"
+    - "f"
+  command: "eco give %player% 1"
+  time: 10 # seconds
+
+
+
+
+# Messages
+
+no_permission: "&cYou do not have permission to perform this command."
+plugin_reloaded: "&aPlugin reloaded."
